@@ -1,0 +1,9 @@
+.container {
+    height: 100%;
+}
+
+.container-body {
+    height: calc(100% - 70px);
+    padding: 15px;
+    background-color: #f6f7fb;
+}

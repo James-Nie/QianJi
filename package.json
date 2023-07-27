@@ -1,0 +1,31 @@
+{
+  "name": "web-component-frame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development  npx webpack serve --hot",
+    "build": "cross-env NODE_ENV=production  npx webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "memfs": "^3.4.7",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "loader-utils": "^2.0.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "source-map-loader": "^4.0.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

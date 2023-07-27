@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "typeRoots" : ["./typings", "./node_modules/@types"],
+        "allowJs": true,
+        "jsx": "preserve",
+        "experimentalDecorators": true
+    },
+    "include": [
+        "frame/*",
+        "packages/**/*",
+        "src/views/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}

@@ -1,0 +1,28 @@
+.es-button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.es-button:hover {
+    background-color: var(--es-color-primary-hover);
+}
+
+.es-button-primary {
+    background-color: var(--es-color-primary);
+}
+.es-button-warning {
+    background-color: var(--es-color-warning);
+}
+.es-button-warning:hover {
+    background-color: var(--es-color-warning-hover);
+}
+.es-button-danger {
+    background-color: var(--es-color-danger);
+}
+.es-button-danger:hover {
+    background-color: var(--es-color-danger-hover);
+}

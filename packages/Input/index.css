@@ -1,0 +1,14 @@
+.es-input-wrapper {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 1px;
+}
+
+.es-input, .es-input:focus {
+    border: none;
+    outline: none;
+}
+
+.es-input-wrapper:hover {
+    
+}

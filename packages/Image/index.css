@@ -1,0 +1,8 @@
+
+.es-image {
+    cursor: pointer;
+}
+
+.es-image:hover {
+    transform: scale(1.3);
+}
