@@ -98,7 +98,7 @@ export default class Father extends Components {
 ...
 render() {
     return `<div class="container">
-        <es-route path="/home">
+        <es-route path="/">
             <container-home></container-home> // 页面组件名称
         </es-route>
         <es-route path="/page">

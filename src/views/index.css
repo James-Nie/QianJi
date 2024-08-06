@@ -1,9 +1,19 @@
-.container {
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    width: 100%;
+}
+
+.app-container {
+    height: 100%;
+    width: 100%;
 }
 
 .container-body {
     height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
     padding: 15px;
-    background-color: #f6f7fb;
+    background-color: #fff;
 }

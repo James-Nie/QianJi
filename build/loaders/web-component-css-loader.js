@@ -11,13 +11,12 @@ module.exports = function (tsxContent) {
     cssPath.pop();
     cssPath = cssPath.join('/') + `/${name}`;
     const isExists = fs.existsSync(cssPath)
-    
+
     if(isExists) {
       let cssContent = fs.readFileSync(cssPath, 'utf8');
       cssContent = cssContent.toString().replace(/\r\n/g, "").replace(/\s+/g, ' '); // 去掉换行和空格
 
       const resContent = tsxContent.substring(0, tsxContent.lastIndexOf('}')) + `_styles() { return "${cssContent}" }}`;
-      // console.log('resContent',resContent);
 
       return resContent;
     }

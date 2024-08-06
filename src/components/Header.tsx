@@ -1,24 +1,25 @@
-import { Components } from '../../frame/index';
-import { styles } from '../../frame/decorators';
+import { Components, styles } from '../../frame/index';
 
 @styles(`
-.my-menus {
+.es-header {
     height: 40px;
     line-height: 40px;
     background-color: #1565a7;
+    color: #fff;
+    cursor: pointer;
 }
 `)
-class Menu extends Components {
+
+class Header extends Components {
+    static Name = 'Header';
+
     state = {
         menus: [{
-            path: '/home',
+            path: '/',
             name: '首页'
         }, {
             path: '/page',
             name: '页面'
-        }, {
-            path: '/page1',
-            name: '页面1'
         }]
     }
 
@@ -30,10 +31,10 @@ class Menu extends Components {
     render() {
         const { menus } = this.state;
         return (
-            `<div class="my-menus">
+            `<div class="es-header">
                 ${
                     menus.map(item => {
-                        return `<es-route-link href="${item.path}">${item.name}</es-route-link>`
+                        return `<es-route-link to="${item.path}">${item.name}</es-route-link>`
                     }).join('')
                 }
             </div>`
@@ -41,4 +42,4 @@ class Menu extends Components {
     }
 }
 
-export default Menu;
+export default Header;

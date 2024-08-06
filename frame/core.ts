@@ -81,6 +81,7 @@ export default class Components extends HTMLElement {
         this.initCore();
     }
 
+    // 事件处理
     private eventHandle = function (rootElement) {
         const _this = this;
         let container = rootElement.firstElementChild;
@@ -97,7 +98,7 @@ export default class Components extends HTMLElement {
                     container.addEventListener(tagName, (e) => {
                         const PROPS = getProps(e.currentTarget, propsReg)
                         if(_this[eventName]) {
-                            _this[eventName].apply(_this, [e, PROPS])
+                            _this[eventName].apply(_this, [PROPS, e])
                         }
                         
                     })
@@ -126,6 +127,7 @@ function getNodeFromString(templateContent: string) {
     return template.content.cloneNode(true);
 }
 
+// props获取
 function getProps(container, filter) {
     const attrNames = container.getAttributeNames();
     const attrs = {};

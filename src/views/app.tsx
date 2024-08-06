@@ -1,4 +1,5 @@
 import { Components } from '../../frame/index';
+import routes from '../router/index';
 
 export default class App extends Components {
     state = {
@@ -6,23 +7,17 @@ export default class App extends Components {
     }
 
     connected() {
-       
+    //    console.log('routes===', routes)
     }
 
     render() {
         const { } = this.state;
         return (
-            `<div class="container">
-                <my-menu></my-menu>
+            `<div class="app-container">
+                <es-header></es-header>
                 <div class="container-body">
-                    <es-route path="/home">
-                        <container-home></container-home>
-                    </es-route>
-                    <es-route path="/page">
-                        <container-page></container-page>
-                    </es-route>
-                    <es-route path="/page1">
-                        <container-page1></container-page1>
+                    <es-sidebar></es-sidebar>
+                    <es-route routes=${JSON.stringify(routes)}>
                     </es-route>
                 </div>
                 

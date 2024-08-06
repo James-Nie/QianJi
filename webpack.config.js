@@ -3,7 +3,7 @@ const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const publicPath = '/app/';
+const publicPath = '/app';
 
 const baseConfig = {
   mode: 'production',
@@ -45,7 +45,7 @@ const baseConfig = {
     new HtmlWebpackPlugin({
       template: './index.html'
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin()
   ]
 };
 

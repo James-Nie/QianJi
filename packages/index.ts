@@ -1,4 +1,4 @@
-import { register } from '../frame/utils';
+import { register, install } from '../frame/index';
 import { prefix } from '../frame/constant';
 import Card from './Card/index';
 import Button from './Button/index';
@@ -9,10 +9,4 @@ import './index.css';
 
 const components = [Button, Input, Image, Card, List];
 
-export function install() {
-    components.forEach(Item => {
-        if(Item.Name && !customElements.get(Item.Name)) {
-            register(`${prefix}${Item.Name.toLowerCase()}`, Item);
-        }
-    }) 
-}
+install(prefix, components);

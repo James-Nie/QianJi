@@ -15,7 +15,7 @@ export default class Home extends Components {
     }
 
     connected() {
-        console.log('home page connected===');
+        // console.log('home page connected===');
 
     }
 
@@ -35,7 +35,6 @@ export default class Home extends Components {
 
     render() {
         const { images, buttons } = this.state;
-        console.log('images===', images)
         return (
             `<div class="home">
                 <es-card

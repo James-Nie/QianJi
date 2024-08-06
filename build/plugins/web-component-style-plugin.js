@@ -8,7 +8,6 @@ class StylesLoadPlugin {
     this.options = options;
   }
   apply(compiler) {
-
     compiler.hooks.thisCompilation.tap(pluginName, (compilation) => {
       compilation.hooks.processAssets.tapAsync(
         {
