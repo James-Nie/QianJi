@@ -1,4 +1,4 @@
-import { Components } from '../../../frame/index';
+import { Components } from 'QianJi';
 
 export default class ButtonPreview extends Components {
     static Name = 'ButtonPreview';
@@ -12,6 +12,14 @@ export default class ButtonPreview extends Components {
 
     connected() {
         console.log('button page connected===');
+    }
+
+    disconnected() {
+        console.log('button page disconnected===');
+    }
+
+    adopted() {
+        console.log('button page adopted===');
     }
 
     handleClick(args: any) {

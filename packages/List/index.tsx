@@ -1,5 +1,4 @@
-import { Components } from '../../frame/index';
-import { prefix } from '../../frame/constant';
+import { Components, prefix, styles } from 'QianJi';
 
 export default class List extends Components {
     static Name = 'List-data';

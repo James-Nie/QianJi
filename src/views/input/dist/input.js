@@ -13,7 +13,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var index_1 = require("../../../frame/index");
+var QianJi_1 = require("QianJi");
 var InputPreview = /** @class */ (function (_super) {
     __extends(InputPreview, _super);
     function InputPreview() {
@@ -54,5 +54,5 @@ var InputPreview = /** @class */ (function (_super) {
         return ("<es-preview-content title=\"\u8F93\u5165\u6846 Input\" description=\"\u57FA\u672C\u8868\u5355\u7EC4\u4EF6\uFF0C\u5E76\u5728\u539F\u751F\u63A7\u4EF6\u57FA\u7840\u4E0A\u8FDB\u884C\u4E86\u529F\u80FD\u6269\u5C55\uFF0C\u53EF\u4EE5\u7EC4\u5408\u4F7F\u7528\u3002\">\n                <es-preview-demo title=\"\u57FA\u672C\u7528\u6CD5\" description=\"\u901A\u8FC7\u9F20\u6807\u6216\u952E\u76D8\u8F93\u5165\u5185\u5BB9\u3002\">\n                    <es-input @change=\"change\" @input=\"input\" placeholder='placeholder'></es-input>\n                </es-preview-demo>\n            </es-preview-content>");
     };
     return InputPreview;
-}(index_1.Components));
+}(QianJi_1.Components));
 exports["default"] = InputPreview;

@@ -13,7 +13,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var index_1 = require("../../../frame/index");
+var QianJi_1 = require("QianJi");
 var Home = /** @class */ (function (_super) {
     __extends(Home, _super);
     function Home() {
@@ -55,5 +55,5 @@ var Home = /** @class */ (function (_super) {
     };
     Home.Name = 'Home';
     return Home;
-}(index_1.Components));
+}(QianJi_1.Components));
 exports["default"] = Home;

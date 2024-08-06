@@ -15,7 +15,10 @@ const baseConfig = {
   },
   resolve: {
     // Add '.ts' and '.tsx' as a resolvable extension.
-    extensions: [".ts", ".tsx", ".js"],
+    alias: {
+      QianJi: path.resolve(__dirname, 'QianJi/index')
+    },
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     extensionAlias: {
       ".js": [".js", ".ts"],
       ".cjs": [".cjs", ".cts"],

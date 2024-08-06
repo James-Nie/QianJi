@@ -1,5 +1,4 @@
-import { Components } from '../../frame/index';
-import { styles } from '../../frame/decorators';
+import { Components, prefix, styles } from 'QianJi';
 
 @styles(`
     .sider-bar {
@@ -32,7 +31,7 @@ class Sidebar extends Components {
     }
 
     connected() {
-        console.log('menu page connected===');
+        // console.log('menu page connected===');
 
     }
 

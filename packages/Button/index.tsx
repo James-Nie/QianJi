@@ -1,5 +1,4 @@
-import { prefix } from '../../frame/constant';
-import { Components } from '../../frame/index';
+import { Components, prefix } from 'QianJi';
 
 export default class Button extends Components {
     static Name = 'Button';

@@ -1,4 +1,4 @@
-import { Components } from '../../frame/index';
+import { Components } from 'QianJi';
 import routes from '../router/index';
 
 export default class App extends Components {

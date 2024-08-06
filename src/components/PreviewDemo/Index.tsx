@@ -1,4 +1,4 @@
-import { Components, styles } from '../../../frame/index';
+import { Components, prefix, styles } from 'QianJi';
 
 @styles(`
 .preview-demo {
@@ -22,10 +22,14 @@ class PreviewDemo extends Components {
         
     }
 
+    handleClick() {
+        
+    }
+
     render() {
         const { title, description, width } = this.props;
         return (
-            `<div class="demo" >
+            `<div class="demo" @click="handleClick">
                 ${
                     title ? `<h2>${title}</h2>`: ''
                 }

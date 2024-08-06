@@ -1,5 +1,5 @@
 
-import { register } from './frame/utils';
+import { register } from './QianJi';
 import './packages/index';
 import './src/components/Index';
 import App from './src/views/app';

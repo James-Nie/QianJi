@@ -1,4 +1,4 @@
-import { Components, styles } from '../../frame/index';
+import { Components, prefix, styles } from 'QianJi';
 
 @styles(`
 .es-header {
@@ -24,8 +24,7 @@ class Header extends Components {
     }
 
     connected() {
-        console.log('menu page connected===');
-        
+        // console.log('menu page connected==='); 
     }
 
     render() {

@@ -1,4 +1,4 @@
-import { createRouter } from "../../frame/router";
+import { createRouter } from "QianJi";
 
 const routes = createRouter({
     baseUrl: '/app',

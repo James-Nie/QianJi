@@ -1,5 +1,4 @@
-
-declare global {
+export declare global {
     
 }
 export declare namespace JSX {
@@ -22,5 +21,8 @@ export declare namespace JSX {
     
         [elemName: string]: any;
     }
-}
 
+    export interface Qianji {
+        
+    }
+}

@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
+        "target": "ESNext",
+        "module": "ESNext",
         "noImplicitAny": false,
         "removeComments": true,
         "preserveConstEnums": true,
@@ -9,15 +9,20 @@
         "typeRoots" : ["./typings", "./node_modules/@types"],
         "allowJs": true,
         "jsx": "preserve",
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "moduleResolution": "Node",
+        "paths": {
+            "QianJi": ["./QianJi"]
+        }
     },
     "include": [
-        "frame/*",
+        "QianJi/*",
         "packages/**/*",
         "src/views/**/*"
     ],
     "exclude": [
         "node_modules",
-        "build"
+        "build",
+        "webpack.config.js"
     ]
 }

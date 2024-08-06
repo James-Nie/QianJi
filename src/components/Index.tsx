@@ -1,4 +1,4 @@
-import { install } from '../../frame/index';
+import { install } from 'QianJi';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import PreviewContent from './PreviewContent/Index';

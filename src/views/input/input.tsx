@@ -1,4 +1,4 @@
-import { Components } from '../../../frame/index';
+import { Components } from 'QianJi';
 
 export default class InputPreview extends Components {
 

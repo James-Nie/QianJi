@@ -1,5 +1,4 @@
-import { register, install } from '../frame/index';
-import { prefix } from '../frame/constant';
+import { register, install, prefix } from 'QianJi';
 import Card from './Card/index';
 import Button from './Button/index';
 import Input from './Input/index';

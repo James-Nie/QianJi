@@ -1,5 +1,4 @@
-import { prefix } from '../../frame/constant';
-import { Components, styles } from '../../frame/index';
+import { Components, prefix, styles } from 'QianJi';
 
 @styles(`
 .es-input-wrapper {
