@@ -215,11 +215,6 @@ export default class Father extends Components {
         count: 0
     }
 
-    // 模板挂载完成事件
-    connected() {
-        
-    }
-
     // 自定义事件接受数据
     handleClick(ev, args) {
         const { detail } = ev; //数据
@@ -285,12 +280,13 @@ class PreviewDemo extends Components {
 ```
 
 ###  使用插槽
-```
+``` javascript
 
 render() {
-    `<es-preview-demo title="基本用法" description="按钮分为 主要按钮、次要按钮、虚线按钮、线形按钮和文本按钮五种。">
-        <es-button type="primary" >primary</es-button> 
-    </es-preview-demo>
-    `
+    return (
+        `<es-preview-demo title="基本用法" description="按钮分为 主要按钮、次要按钮、虚线按钮、线形按钮和文本按钮五种。">
+            <es-button type="primary" >primary</es-button> 
+        </es-preview-demo>
+    `)
 }
 ```
