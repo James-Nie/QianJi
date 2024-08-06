@@ -7,8 +7,9 @@
 #### 开发一个组件
 ``` javascript
 
-import { Components, prefix，register } from 'QianJi';
+import { Components, prefix, tag } from 'QianJi';
 
+@tag('es-button')
 export default class Button extends Components {
     static Name = 'Button'; // 组件名称
 
@@ -25,13 +26,15 @@ export default class Button extends Components {
     }
 }
 
-register(`es-button`, Button); // 定义组件
 
 ```
 
 #### 使用组件
 
 ``` javascript
+import { Components, prefix, tag } from 'QianJi';
+
+@tag('es-home')
 export default class Home extends Components {
     static Name = 'Home'; // 组件名称
 
@@ -54,8 +57,6 @@ export default class Home extends Components {
     }
 }
 
-register(`es-home`, Home);
-
 ```
 
 ### 路由
@@ -63,7 +64,7 @@ register(`es-home`, Home);
 ``` javascript
 
 // App.tsx
-import { createRouter } from "QianJi";
+import { createRouter, tag } from "QianJi";
 
 const routes = createRouter({
     baseUrl: '/app',
@@ -83,6 +84,7 @@ const routes = createRouter({
     ]
 });
 
+@tag('es-app')
 export default class App extends Components {
     state = {
         
@@ -113,11 +115,10 @@ export default class App extends Components {
 
 ``` javascript
 // main.ts
-import { register } from 'QianJi';
-import App from './src/views/app';
+import './src/views/app';
+import './src/views/button';
+...
 import './src/index.css';
-
-register(`es-app`, App);
 
 ```
 
@@ -178,8 +179,9 @@ export default class MyComponent extends Components {
 ### 事件处理
 
 ``` javascript
-import { Components, prefix，register } from 'QianJi';
+import { Components, prefix，tag } from 'QianJi';
 
+@tag('es-button')
 export default class Button extends Components {
     static Name = 'Button'; // 组件名称
 
@@ -203,10 +205,12 @@ export default class Button extends Components {
     }
 }
 
-register(`es-button`, Button);
 ```
 
 ``` javascript
+import { Components, tag } from 'QianJi';
+
+@tag('es-father')
 export default class Father extends Components {
     static Name = 'Home'; // 组件名称
 
@@ -288,5 +292,38 @@ render() {
             <es-button type="primary" >primary</es-button> 
         </es-preview-demo>
     `)
+}
+```
+
+### 模板定义
+``` javascript
+import { Components, styles, tag } from 'QianJi';
+
+@tag('es-header')
+class Header extends Components {
+    static Name = 'Header';
+
+    state = {
+        menus: [{
+            path: '/',
+            name: '首页'
+        }, {
+            path: '/page',
+            name: '页面'
+        }]
+    }
+
+    render() {
+        const { menus } = this.state;
+        return (
+            `<div class="es-header">
+                ${
+                    menus.length && menus.map(item => {
+                        return `<es-route-link to="${item.path}">${item.name}</es-route-link>`
+                    }).join('')
+                }
+            </div>`
+        )
+    }
 }
 ```

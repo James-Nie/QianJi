@@ -5,7 +5,7 @@ const routes = createRouter({
     mode: 'hash',
     routes: [
         {
-            path: "",
+            path: "/",
             element: 'container-home',
             children: [{
                 path: "/Button",

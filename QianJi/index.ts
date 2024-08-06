@@ -2,7 +2,7 @@ import  Components from './core';
 import { useState } from './useState';
 import Route, { createRouter } from './router';
 import { register, install} from './utils';
-import { styles } from './decorators';
+import { styles, tag } from './decorators';
 import { prefix } from './constant';
 
 export {
@@ -11,6 +11,7 @@ export {
     register,
     install,
     styles,
+    tag,
     Route,
     createRouter,
     prefix

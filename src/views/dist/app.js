@@ -12,6 +12,12 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 exports.__esModule = true;
 var QianJi_1 = require("QianJi");
 var index_1 = require("../router/index");
@@ -29,6 +35,9 @@ var App = /** @class */ (function (_super) {
         var _a = this.state;
         return ("<div class=\"app-container\">\n                <es-header></es-header>\n                <div class=\"container-body\">\n                    <es-sidebar></es-sidebar>\n                    <es-route routes=" + JSON.stringify(index_1["default"]) + ">\n                    </es-route>\n                </div>\n                \n            </div>");
     };
+    App = __decorate([
+        QianJi_1.tag('es-app')
+    ], App);
     return App;
 }(QianJi_1.Components));
 exports["default"] = App;

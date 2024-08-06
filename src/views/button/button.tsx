@@ -1,5 +1,6 @@
-import { Components } from 'QianJi';
+import { Components, tag } from 'QianJi';
 
+@tag('button-pre')
 export default class ButtonPreview extends Components {
     static Name = 'ButtonPreview';
 

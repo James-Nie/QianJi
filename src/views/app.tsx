@@ -1,6 +1,7 @@
-import { Components } from 'QianJi';
+import { Components, tag } from 'QianJi';
 import routes from '../router/index';
 
+@tag('es-app')
 export default class App extends Components {
     state = {
         

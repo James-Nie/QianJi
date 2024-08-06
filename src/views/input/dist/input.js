@@ -12,6 +12,12 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 exports.__esModule = true;
 var QianJi_1 = require("QianJi");
 var InputPreview = /** @class */ (function (_super) {
@@ -53,6 +59,9 @@ var InputPreview = /** @class */ (function (_super) {
         var commonts = this.state.commonts;
         return ("<es-preview-content title=\"\u8F93\u5165\u6846 Input\" description=\"\u57FA\u672C\u8868\u5355\u7EC4\u4EF6\uFF0C\u5E76\u5728\u539F\u751F\u63A7\u4EF6\u57FA\u7840\u4E0A\u8FDB\u884C\u4E86\u529F\u80FD\u6269\u5C55\uFF0C\u53EF\u4EE5\u7EC4\u5408\u4F7F\u7528\u3002\">\n                <es-preview-demo title=\"\u57FA\u672C\u7528\u6CD5\" description=\"\u901A\u8FC7\u9F20\u6807\u6216\u952E\u76D8\u8F93\u5165\u5185\u5BB9\u3002\">\n                    <es-input @change=\"change\" @input=\"input\" placeholder='placeholder'></es-input>\n                </es-preview-demo>\n            </es-preview-content>");
     };
+    InputPreview = __decorate([
+        QianJi_1.tag('input-pre')
+    ], InputPreview);
     return InputPreview;
 }(QianJi_1.Components));
 exports["default"] = InputPreview;

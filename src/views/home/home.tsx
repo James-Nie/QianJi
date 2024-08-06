@@ -1,5 +1,6 @@
-import { Components } from 'QianJi';
+import { Components, tag } from 'QianJi';
 
+@tag('container-home')
 export default class Home extends Components {
     static Name = 'Home';
 

@@ -6,7 +6,7 @@ var routes = QianJi_1.createRouter({
     mode: 'hash',
     routes: [
         {
-            path: "",
+            path: "/",
             element: 'container-home',
             children: [{
                     path: "/Button",
